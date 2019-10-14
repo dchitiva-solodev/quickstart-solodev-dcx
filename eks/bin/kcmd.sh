@@ -6,9 +6,9 @@ export KUBECONFIG="eksconfig"
 
 #GET VALUES FROM CLOUDFORMATION OUTPUT OF EKS STACK
 export CAData=""
+export ControlPlaneProvisionRoleArn=""
 export EKSEndpoint=""
 export EKSName=""
-export ControlPlaneProvisionRoleArn=""
 
 #AWS
 export REGION="us-east-1"
