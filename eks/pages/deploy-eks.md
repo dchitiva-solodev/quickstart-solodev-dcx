@@ -97,23 +97,6 @@ The following parameters must be configured to launch your Solodev DCX CloudForm
 
 <table>
 	<tr>
-		<td colspan="2"><strong>Optional Solodev DCX configuration</strong></td>
-	<tr>
-		<td width="33%">ProvisionSolodevDCXNetwork</td>
-		<td width="600px">Whether or not to also deploy the <a href="deploy-solodev-dcx-network.md">Solodev DCX Network</a>. Recommended to keep "Disabled" unless a Solodev developer.</td>
-	</tr>   		
-	<tr>
-		<td>ZoneName</td>
-		<td>(Optional) The Route53 ZoneName that corresponds to the Solodev DCX Network</td>
-	</tr>
-	<tr>
-		<td>ZoneId</td>
-		<td>(Optional) The Route53 ZoneID that corresponds to the Solodev DCX Network</td>
-	</tr>         
-</table>
-
-<table>
-	<tr>
 		<td colspan="2"><strong>AWS Quick Start configuration</strong></td>
 	<tr>
 		<td width="33%">Quick Start S3 bucket name</td>
@@ -152,6 +135,32 @@ The following parameters must be configured to launch your Solodev DCX CloudForm
 		<td>EFS provisioned throughput in Mibps</td>
 		<td>Set to 0 if EfsThroughputMode is set to bursting. Only has an effect when EfsStorageClass is enabled.</td>
 	</tr>        
+</table>
+
+<table>
+	<tr>
+		<td colspan="2"><strong>Optional Solodev DCX configuration</strong></td>
+	<tr>
+		<td width="33%">ProvisionSolodevDCXNetwork</td>
+		<td width="600px">Whether or not to also deploy the <a href="deploy-solodev-dcx-network.md">Solodev DCX Network</a>. Recommended to keep "Disabled" unless a Solodev developer.</td>
+	</tr>   		
+	<tr>
+		<td>ZoneName</td>
+		<td>(Optional) The Route53 ZoneName that corresponds to the Solodev DCX Network</td>
+	</tr>
+	<tr>
+		<td>ZoneId</td>
+		<td>(Optional) The Route53 ZoneID that corresponds to the Solodev DCX Network</td>
+	</tr>         
+</table>
+
+<table>
+	<tr>
+		<td colspan="2"><strong>Other parameters</strong></td>
+	<tr>
+		<td width="33%">MaxNumberOfNodes</td>
+		<td width="600px">The maximum number of Amazon EKS node instances.</td>
+	</tr>       
 </table>
 
 <strong>Specify Options</strong><br />
